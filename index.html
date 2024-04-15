@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .location-div{
+            height: 50px;
+            width:100%;
+            border: 1px solid rgb(201, 199, 199);
+            
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        #location-img{
+            height: 30px;
+            width: 30px;
+        }
+        .location-div>p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;   
+        }
+        #location-btn{
+            margin-left: 10px;
+            height: 35px;
+            width: 110px;
+            border-radius: 30px;
+            font-size: small;
+            color: aliceblue;
+            background-color: black;
+            font-weight: bold;
+            border: none;
+        }
+         .signup-navbar{
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between; /* Evenly distribute items */
+            align-items: center; /* Center items vertically */
+            padding: 20px 40px;
+            margin: 0px 60px;
+            padding-top: 60px;
+            
+        } 
+        .kfc-logo{
+            height: 30px;
+            width: auto;
+        }
+        .signup-navbar .left-items {
+      margin-right: auto; /* Push left items to the left */
+      
+      
+    }
+
+    .signup-navbar .right-items {
+      margin-left: auto; /* Push right items to the right */
+     
+    }
+
+    .order-div{
+            height: 70px;
+            width:100%;
+            border: 1px solid rgb(201, 199, 199);
+            
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: black;
+            color: white;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #startorder-btn{
+            margin-left: 10px;
+            height: 45px;
+            width: 160px;
+            border-radius: 30px;
+            font-size: small;
+            color: aliceblue;
+            background-color:red;
+            font-weight: bold;
+            border: none;
+        }
+        #offerdisplay{
+            height: 400px;
+            width: 100%;
+        }
+        #browsetag{
+          font-family: sans-serif;
+          height: 70px;
+          width: 100%;
+          /* background-color: red; */
+          margin-left: 40px;
+          
+        }
+        
+
+       
+        
+        /* .item-images{
+            height: 250px;
+            width: 250px;
+        }
+        .itemname-div{
+            height: 60px;
+            width: 250px;
+            background-color: whitesmoke;
+            color:black;
+            text-align: center;
+            padding: 7px 0px 7px 0px;
+            font-family: sans-serif;
+            font-weight: bold;
+        } */
+        .item-div {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center items horizontally */
+            /* grid-template-columns: repeat(2, 20px 1fr); */
+            margin-left: 60px;
+          
+            
+            
+        }
+        
+         .container-1,
+         .container-2 {
+           display: flex;
+           flex-wrap: wrap;
+           margin: 10PX;
+        }
+
+.container-1 {
+    justify-content: center; /* Center items horizontally for the first row */
+}
+
+.container-2 {
+    justify-content: center; /* Center items horizontally for the second row */
+}
+        
+
+
+        .div-images{
+            height: 250px;
+            width: 96%;
+        }
+        .itemname-div{
+            height: 60px;
+            width: 96%;
+            background-color: whitesmoke;
+            color:black;
+            text-align: center;
+            padding: 7px 0px 7px 0px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        #fingerimg{
+            height: 330px;
+            width: 300px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            background-color: whitesmoke;
+        }
+        #arrowimg{
+            width: 40px;
+            height: 15px;
+        }
+        #view{
+            text-align: center;
+            margin-left: 80px;
+        }
+     .bottomdiv{
+        height: 800px;
+        /* width: 100%; */
+        background-color: black;
+     }
+     .offerimgs{
+        height: 500px;
+        width: 400px;
+        margin-left: 90px;
+     }
+
+    </style>
+</head>
+<body>
+    
+    <div class="location-div">
+        <img id="location-img" src="images/location.png" alt="location-symbol-image">
+        <p>Allow location access for local store menu and promos</p>
+        <button id="location-btn">Set Location</button>
+    </div>
+    
+    <div class="signup-navbar">
+    <div class="left-nav">
+        <img class="kfc-logo" src="images/kfc-logo.png" alt="kfc-logo">
+        <a href="#menu" style="text-decoration: none; color: black;font-weight: bold; font-family: sans-serif;">Menu</a>
+        <a href="#locations" style="text-decoration: none; color: black;font-weight: bold; font-family: sans-serif;">Deals</a>
+    </div>
+    <div class="right-nav">
+        <img class="kfc-logo" src="images/signin.png" alt="signin">
+        <a href="#about" style="text-decoration: none; color: black;font-weight: bold; font-family: sans-serif;">Sign in</a>
+        <a href="#contact" style="text-decoration: none; color: black;font-weight: bold; font-family: sans-serif;">0</a>
+        <img class="kfc-logo" src="images/cartvaluebucket.jpeg" alt="cartvalue">
+    </div>
+</div>
+
+
+<div class="order-div">
+    <!-- <img id="location-img" src="images/location.png" alt="location-symbol-image"> -->
+    <p>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</p>
+    <button id="startorder-btn">Start Order</button>
+</div>
+<img id="offerdisplay" src="images/offerdisplay.webp" alt="offerdisplayimg">
+
+
+
+<div id="browsetag">
+    <div >
+        <h1 >BROWSE CATEGORIES </h1>
+    </div>
+    <div id="line">
+        <hr>
+    </div>
+     
+   
+</div>
+
+
+<div class="item-div">
+    <div class="container-1">
+    <div class="div-1">
+        <img class="div-images" src="images/div1-periperi.jpg" alt="periperichicken">
+        <div class="itemname-div">
+            <p><b>PERI PERI CHICKEN</b></p>
+        </div>
+    </div>
+    <div class="div-1">
+        <img class="div-images" src="images/valusnack.jpg" alt="periperichicken">
+        <div class="itemname-div">
+            <p><b>VALUE SNACKERS</b></p>
+        </div>
+    </div>
+    <div class="div-1">
+        <img class="div-images" src="images/Chickenroll.jpg" alt="periperichicken">
+        <div class="itemname-div">
+            <p><b>CHICKEN ROLLS</b></p>
+        </div>
+    </div>
+    <div class="div-1">
+        <img class="div-images" src="images/chickenbucket.jpg" alt="periperichicken">
+        <div class="itemname-div">
+            <p><b>CHICKEN BUCKETS</b></p>
+        </div>
+    </div>
+ </div>
+  <div class="container-2">
+    <div class="div-1">
+        <img class="div-images" src="images/chickenbiryanibucket.jpg" alt="periperichicken">
+        <div class="itemname-div">
+            <p><b>BIRYANI BUCKETS</b></p>
+        </div>
+    </div>
+    <div class="div-1">
+        <img class="div-images" src="images/boxmeal.jpg" alt="periperichicken">
+        <div class="itemname-div">
+            <p><b>BOX MEALS</b></p>
+        </div>
+    </div>
+    <div class="div-1">
+        <img class="div-images" src="images/burgers.jpg" alt="periperichicken">
+        <div class="itemname-div">
+            <p><b>BURGERS</b></p>
+        </div>
+    </div>
+    <div id="fingerimg" class="div-1">
+        <img class="div-images" src="images/itsfingerimg.svg" alt="periperichicken">
+        <a id="view" href="https://online.kfc.co.in/menu" style="text-decoration: none;color: black;font-family: sans-serif;font-weight: bold;">View All Menu <img id="arrowimg" src="images/rightsidearrow.png" alt=""></a>
+    </div>
+ </div>
+</div>
+
+<div class="bottomdiv">
+    <h1>OFFERS & DEALS</h1>
+    <img class="offerimgs" src="images/offerimg-1.jpg" alt="">
+    <img class="offerimgs" src="images/offerimg-2.jpg" alt="">
+    <img class="offerimgs" src="images/offerimg-3.jpg" alt="">
+</div>
+    
+    
+</body>
+</html>
